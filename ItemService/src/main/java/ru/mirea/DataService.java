@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
-import java.sql.SQLException;
+import javax.sql.DataSource;
 
 @Service
 public class DataService {
@@ -12,11 +12,12 @@ public class DataService {
     private JdbcTemplate jdbcTemplate;
 
     @Autowired
-    public DataService(){
-        this.jdbcTemplate = new JdbcTemplate();
+    public DataService(JdbcTemplate jdbcTemplate){
+        this.jdbcTemplate = jdbcTemplate;
     }
 
-    public void init() throws SQLException {
+    public void init() {
+        try{
         String sql ="CREATE TABLE Item(" +
                 "id int(36) PRIMARY KEY NOT NULL, " +
                 "name varchar(255) NOT NULL, " +
@@ -59,6 +60,9 @@ public class DataService {
                 "('4', 'Chappy', 'Dry dog food', '579', '250', '2')," +
                 "('6', 'Cliffi', 'Dry fish food', '347', '170', '3');";
         jdbcTemplate.execute(sql);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
 

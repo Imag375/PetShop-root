@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import ru.mirea.domain.Cart;
-import ru.mirea.domain.Item;
+
+//import ru.mirea.domain.Item;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 @Controller
 public class BalanceController {
-    @RequestMapping(value = "tray", method = RequestMethod.GET)
+    /*@RequestMapping(value = "tray", method = RequestMethod.GET)
     @ResponseBody
     public List<Item> tray() {
 
@@ -37,5 +37,5 @@ public class BalanceController {
     void delete(@PathVariable int id) {
 
         Cart.deleteFromCart(id);
-    }
+    }*/
 }
