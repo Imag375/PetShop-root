@@ -31,8 +31,7 @@ public class PetDAO {
     }
 
     public List<Pet> findThePriceOfPet(int id) {
-        return jdbcTemplate.query("select id, name, price from Pet " +
-                "where internalID = " + id, new PetRowMapper());
+        return jdbcTemplate.query("select pet.id, pet.name, pet.price from Pet where internalID = " + id, new PetRowMapper());
     }
 
     private class PetRowMapper implements RowMapper<Pet> {

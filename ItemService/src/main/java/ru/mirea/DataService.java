@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 
 @Service
@@ -16,9 +17,9 @@ public class DataService {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    @PostConstruct
     public void init() {
-        try{
-        String sql ="CREATE TABLE Item(" +
+        /*String sql ="CREATE TABLE Item(" +
                 "id int(36) PRIMARY KEY NOT NULL, " +
                 "name varchar(255) NOT NULL, " +
                 "price double(255) NOT NULL, " +
@@ -34,35 +35,34 @@ public class DataService {
         jdbcTemplate.execute(sql);
 
         sql ="CREATE TABLE Pet(" +
-                "FOREIGN KEY(id) REFERENCES Item(id) ON DELETE CASCADE ON UPDATE CASCADE, " +
-                "FOREIGN KEY(name) REFERENCES Item(name) ON DELETE CASCADE ON UPDATE CASCADE, " +
+                "id int(36) NOT NULL, " +
+                "name varchar(255) NOT NULL, " +
                 "info varchar(255) NOT NULL," +
-                "FOREIGN KEY(price) REFERENCES Item(price) ON DELETE CASCADE ON UPDATE CASCADE, " +
-                "FOREIGN KEY(count) REFERENCES Item(count) ON DELETE CASCADE ON UPDATE CASCADE, " +
+                "price double(255) NOT NULL, " +
+                "count int(255) NOT NULL, " +
+                "FOREIGN KEY(id, name, price, count) REFERENCES Item(id, name, price, count) ON DELETE CASCADE ON UPDATE CASCADE, " +
                 "internalID int(36) PRIMARY KEY NOT NULL);";
         jdbcTemplate.execute(sql);
         sql = "INSERT INTO Pet VALUES" +
-                "('1', 'Dog', 'That's a dog', '1250', '13', '1')," +
-                "('5', 'Cat', 'That's a cat', '750', '25', '2')," +
-                "('3', 'Fish', 'That's a fish', '345', '17', '3');";
+                "('1', 'Dog', 'Big, but cute dog.', '1250', '13', '1')," +
+                "('5', 'Cat', 'Playful and fluffy pet.', '750', '25', '2')," +
+                "('3', 'Fish', 'Perhaps the fish is magic.', '345', '17', '3');";
         jdbcTemplate.execute(sql);
 
         sql ="CREATE TABLE Stuff(" +
-                "FOREIGN KEY(id) REFERENCES Item(id) ON DELETE CASCADE ON UPDATE CASCADE, " +
-                "FOREIGN KEY(name) REFERENCES Item(name) ON DELETE CASCADE ON UPDATE CASCADE, " +
+                "id int(36) NOT NULL, " +
+                "name varchar(255) NOT NULL, " +
                 "info varchar(255) NOT NULL," +
-                "FOREIGN KEY(price) REFERENCES Item(price) ON DELETE CASCADE ON UPDATE CASCADE, " +
-                "FOREIGN KEY(count) REFERENCES Item(count) ON DELETE CASCADE ON UPDATE CASCADE, " +
+                "price double(255) NOT NULL, " +
+                "count int(255) NOT NULL, " +
+                "FOREIGN KEY(id, name, price, count) REFERENCES Item(id, name, price, count) ON DELETE CASCADE ON UPDATE CASCADE, " +
                 "internalID int(36) PRIMARY KEY NOT NULL);";
         jdbcTemplate.execute(sql);
         sql = "INSERT INTO Stuff VALUES" +
                 "('2', 'Whiskas', 'Dry cat food', '256', '103', '1')," +
                 "('4', 'Chappy', 'Dry dog food', '579', '250', '2')," +
                 "('6', 'Cliffi', 'Dry fish food', '347', '170', '3');";
-        jdbcTemplate.execute(sql);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        jdbcTemplate.execute(sql);*/
     }
 }
 
