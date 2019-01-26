@@ -5,7 +5,8 @@ import org.springframework.lang.Nullable;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
-import ru.mirea.domain.Stuff;
+import ru.mirea.Item;
+import ru.mirea.Stuff;
 
 @Service
 public class StuffService {
@@ -28,7 +29,7 @@ public class StuffService {
     }
 
     @Nullable
-    public List<Stuff> findThePriceOfStuff(int id) {
+    public List<Item> findThePriceOfStuff(int id) {
         return stuffDAO.findThePriceOfStuff(id);
     }
 }

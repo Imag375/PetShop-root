@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="AuthService" />
         <module name="BalanceService" />
         <module name="CartService" />
+        <module name="ConfigStorage" />
+        <module name="Domains" />
         <module name="ItemService" />
-        <module name="PetShop" />
         <module name="PetShop-root" />
       </profile>
     </annotationProcessing>

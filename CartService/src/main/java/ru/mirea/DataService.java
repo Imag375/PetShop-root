@@ -2,33 +2,47 @@ package ru.mirea;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
+import javax.annotation.PostConstruct;
+
+@Repository
 public class DataService {
+
     private JdbcTemplate jdbcTemplate;
+
     @Autowired
-    DataService(JdbcTemplate jdbcTemplate){
+    public DataService(JdbcTemplate jdbcTemplate){
         this.jdbcTemplate = jdbcTemplate;
     }
-    void init(){
-        jdbcTemplate.execute("CREATE TABLE Items (Id int PRIMARY KEY auto_increment, Name VARCHAR, Price double, IsPet bit, Age double)");
+
+    @PostConstruct
+    public void init() {
+        String sql ="CREATE TABLE Cart(" +
+                "userID int(36) NOT NULL, " +
+                "internalID int(36) PRIMARY KEY NOT NULL, " +
+                "itemID int(36) NOT NULL, " +
+                "name varchar(255) NOT NULL, " +
+                "price double(255) NOT NULL, " +
+                "count int(255) NOT NULL)";
+        jdbcTemplate.execute(sql);
+        sql = "INSERT INTO CartItem VALUES" +
+                "('3', '1', '1', 'Dog', '1250', '1')," +
+                "('2', '2', '2', 'Whiskas', '256', '4')," +
+                "('3', '3', '3', 'Fish', '345', '2')," +
+                "('1', '4', '4', 'Chappy', '579', '1')," +
+                "('2', '5', '5', 'Cat', '750', '1')," +
+                "('1', '6', '6', 'Cliffi', '347', '3');";
+        jdbcTemplate.execute(sql);
+
+        sql ="CREATE TABLE TotalPrices(" +
+                "userID int(36) PRIMARY KEY NOT NULL, " +
+                "price double(255) NOT NULL)";
+        jdbcTemplate.execute(sql);
+        sql = "INSERT INTO TotalPrices VALUES" +
+                "('2', '926')," +
+                "('1', '1006')," +
+                "('3', '1595');";
+        jdbcTemplate.execute(sql);
     }
 }
-
-//PreparedStatement ps = conn.prepareStatement("CREATE TABLE Items (Id int PRIMARY KEY auto_increment, Name VARCHAR, Price double, IsPet bit, Age double)");
-//ps.execute();
-
-//ps = conn.prepareStatement("INSERT INTO Items(Name, Price, IsPet, Age) VALUES ('Haski',100, 1, 2),('Collar', 1, 0, null),('Bulldog',90, 1, 1)");
-//ps.execute();
-
-//ps = conn.prepareStatement("CREATE TABLE Users (Id int PRIMARY KEY auto_increment, FirstName varchar, LastName varchar, Password varchar)");
-//ps.execute();
-
-//PreparedStatement ps = conn.prepareStatement("INSERT INTO Users(FirstName, LastName, Password) VALUES ('Viktor', 'Lobanov', 'lvv')");
-//ps.execute();
-
-//PreparedStatement ps = conn.prepareStatement("CREATE TABLE Carts (Id int PRIMARY KEY auto_increment, UserID int  FOREIGN KEY REFERENCES Users(Id), ItemId int FOREIGN KEY REFERENCES Items(Id))");
-//ps.execute();
-
-
-//PreparedStatement ps = conn.prepareStatement("Insert into Balance (MONEY, USERID) VALUES (300, 1)");
-//ps.execute();

@@ -2,12 +2,11 @@ package ru.mirea;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
-import javax.sql.DataSource;
 
-@Service
+@Repository
 public class DataService {
 
     private JdbcTemplate jdbcTemplate;

@@ -6,11 +6,15 @@
 
     <groupId>PetShop</groupId>
     <artifactId>PetShop</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
 
     <modules>
         <module>ItemService</module>
         <module>CartService</module>
         <module>BalanceService</module>
+        <module>ConfigStorage</module>
+        <module>AuthService</module>
+        <module>Domains</module>
     </modules>
 </project>

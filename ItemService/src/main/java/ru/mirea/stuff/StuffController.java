@@ -8,29 +8,30 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
-import ru.mirea.domain.Stuff;
+import ru.mirea.Item;
+import ru.mirea.Stuff;
 
 @Controller
 public class StuffController {
 
     @Autowired
-    private StuffDAO stuffDAO;
+    private StuffService stuffService;
 
     @RequestMapping(value = "stuff",method = RequestMethod.GET)
     @ResponseBody
     public List<Stuff> getAllStuffs(){
-        return stuffDAO.findAll();
+        return stuffService.findAll();
     }
 
     @RequestMapping(value = "stuff/{id}",method = RequestMethod.GET)
     @ResponseBody
     public List<Stuff> getStuff(@PathVariable int id){
-        return stuffDAO.findStuffByID(id);
+        return stuffService.findStuffByID(id);
     }
 
     @RequestMapping(value = "stuff/{id}/price",method = RequestMethod.GET)
     @ResponseBody
-    public List<Stuff> getPriceOfStuff(@PathVariable int id){
-        return stuffDAO.findThePriceOfStuff(id);
+    public List<Item> getPriceOfStuff(@PathVariable int id){
+        return stuffService.findThePriceOfStuff(id);
     }
 }

@@ -2,7 +2,7 @@ package ru.mirea.pet;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import ru.mirea.domain.Pet;
+import ru.mirea.Pet;
 
 import java.math.BigDecimal;
 
