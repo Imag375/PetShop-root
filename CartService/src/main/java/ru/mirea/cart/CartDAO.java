@@ -3,12 +3,15 @@ package ru.mirea.cart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import org.springframework.stereotype.Component;
 import ru.mirea.CartItem;
 import ru.mirea.price.TotalPrice;
 import ru.mirea.price.TotalPriceRowMapper;
 
+import java.math.BigDecimal;
 import java.util.List;
 
+@Component
 public class CartDAO {
 
     private final JdbcTemplate jdbcTemplate;
@@ -22,7 +25,7 @@ public class CartDAO {
         return jdbcTemplate.query("select * from Cart where userID = " + userID, new ItemRowMapper());
     }
 
-    public void addItem(int userID, int internalID, int itemID, String name, double price) {
+    public void addItem(int userID, int itemID, String name, BigDecimal price) {
         if (jdbcTemplate.query("select * from Cart where userID = " + userID +
                 " and itemID = " + itemID, new ItemRowMapper()).get(0).getItemID() == itemID)
             jdbcTemplate.execute("update Cart set price = price + " + price +
@@ -30,7 +33,6 @@ public class CartDAO {
         else
             jdbcTemplate.execute("insert into Cart values(" +
                     userID + ", " +
-                    internalID + ", " +
                     itemID + ", " +
                     name + ", " +
                     price + ", " +
@@ -47,7 +49,7 @@ public class CartDAO {
         jdbcTemplate.execute("update TotalPrices set price = 0 where userID = " + userID);
     }
 
-    public double getTotalPrice(int userID) {
+    public BigDecimal getTotalPrice(int userID) {
         String query = "select * from TotalPrices where userID = " + userID;
 
         List<TotalPrice> totalPrice = jdbcTemplate.query(query, new TotalPriceRowMapper());

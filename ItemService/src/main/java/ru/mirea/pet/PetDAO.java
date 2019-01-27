@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 import ru.mirea.Item;
-import ru.mirea.ItemRowMapper;
+import ru.mirea.item.ItemRowMapper;
 import ru.mirea.Pet;
 
 @Component

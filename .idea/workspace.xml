@@ -2,75 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed69455-cff0-47d6-a91c-7b173d8b276d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/balance/BalanceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/balance/BalanceDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/balance/BalanceRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/balance/BalanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/ItemRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/price/TotalPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/price/TotalPriceRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigStorage/ConfigStorage.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigStorage/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/ConfigStorageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/ConfigStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigStorage/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domains/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Balance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/ItemRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/DataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/SecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/SecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Filters/Filters.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Filters/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Filters/src/main/java/ru/mirea/AdminFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Filters/src/main/java/ru/mirea/TokenValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Filters/src/main/java/ru/mirea/UserFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/SecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BalanceService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/src/main/java/mirea/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/src/main/java/mirea/DataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/DataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/src/main/java/mirea/balance/BalanceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/src/main/java/mirea/domain/Balance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/src/main/java/mirea/domain/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/target/classes/mirea/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/DataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/target/classes/mirea/DataService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/balance/BalanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/target/classes/mirea/balance/BalanceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/domain/Balance.class" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/target/classes/mirea/domain/Balance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/domain/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/target/classes/mirea/domain/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/DataService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/balance/BalanceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/balance/BalanceDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/balance/BalanceRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/balance/BalanceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/domain/Balance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BalanceService/target/classes/mirea/domain/Item.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CartService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/DataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/DataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/domain/Cart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/domain/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/ItemRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/ItemRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/DataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/DataService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/cart/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/cart/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/cart/CartDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/cart/CartDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/cart/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/cart/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/domain/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/target/classes/ru/mirea/domain/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/ConfigStorageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/configStorage/ConfigStorageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/ConfigStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/configStorage/ConfigStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domains/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Domains/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/CartItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/DataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/DataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/domain/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/domain/Stuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Stuff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/ItemRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemRowMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetWrapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/DataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/DataService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Pet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Stuff.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Stuff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/ItemRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Pet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/domain/Stuff.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetDAO$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetDAO$PetRowMapper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetRowMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/pet/PetWrapper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffDAO$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffDAO$StuffRowMapper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffRowMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ItemService/target/classes/ru/mirea/stuff/StuffService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/Application.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,6 +83,7 @@
     <ignored path="$PROJECT_DIR$/ConfigStorage/target/" />
     <ignored path="$PROJECT_DIR$/AuthService/target/" />
     <ignored path="$PROJECT_DIR$/Domains/target/" />
+    <ignored path="$PROJECT_DIR$/Filters/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,11 +93,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PetDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetDAO.java">
+      <file leaf-file-name="AuthRowMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthRowMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="238">
+              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,20 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PetRowMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetRowMapper.java">
+      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StuffDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,20 +117,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StuffRowMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffRowMapper.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="781">
+              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StuffService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffService.java">
+      <file leaf-file-name="CartService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="578">
+              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,11 +138,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CartController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartController.java">
+      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="85">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,22 +172,10 @@
         </entry>
       </file>
       <file leaf-file-name="DataService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/DataService.java">
+        <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/DataService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StuffController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="357">
+              <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,42 +199,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/CartService/pom.xml" />
-        <option value="$PROJECT_DIR$/BalanceService/pom.xml" />
-        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetDataService.java" />
-        <option value="$PROJECT_DIR$/ItemService/src/main/resources/jdbctemplate-item-config.xml" />
-        <option value="$PROJECT_DIR$/ItemService/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/BalanceService/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/domain/Pet.java" />
-        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/domain/Stuff.java" />
-        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/domain/Item.java" />
-        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/Application.java" />
-        <option value="$PROJECT_DIR$/BalanceService/src/main/java/mirea/domain/Balance.java" />
-        <option value="$PROJECT_DIR$/BalanceService/src/main/java/mirea/domain/Item.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/DataService.java" />
-        <option value="$PROJECT_DIR$/BalanceService/src/main/java/mirea/DataService.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/domain/Cart.java" />
-        <option value="$PROJECT_DIR$/ConfigStorage/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/ConfigStorage/pom.xml" />
-        <option value="$PROJECT_DIR$/AuthService/pom.xml" />
-        <option value="$PROJECT_DIR$/ItemService/pom.xml" />
-        <option value="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/ConfigStorageService.java" />
-        <option value="$PROJECT_DIR$/AuthService/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/ConfigStorageController.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/domain/Item.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/TotalPriceRowMapper.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/domain/TotalPrice.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/DataService.java" />
         <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/domain/CartItem.java" />
         <option value="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/CartItem.java" />
         <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/price/TotalPriceRowMapper.java" />
         <option value="$PROJECT_DIR$/Domains/pom.xml" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartDAO.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/ItemRowMapper.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartService.java" />
-        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartController.java" />
         <option value="$PROJECT_DIR$/BalanceService/src/main/java/mirea/balance/BalanceController.java" />
         <option value="$PROJECT_DIR$/BalanceService/src/main/java/mirea/balance/BalanceDAO.java" />
         <option value="$PROJECT_DIR$/BalanceService/src/main/java/mirea/balance/BalanceRowMapper.java" />
@@ -245,6 +217,39 @@
         <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffRowMapper.java" />
         <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffService.java" />
         <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/ItemRowMapper.java" />
+        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/DataService.java" />
+        <option value="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/CartItem.java" />
+        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/ItemRowMapper.java" />
+        <option value="$PROJECT_DIR$/AuthService/pom.xml" />
+        <option value="$PROJECT_DIR$/CartService/pom.xml" />
+        <option value="$PROJECT_DIR$/AuthService/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthDAO.java" />
+        <option value="$PROJECT_DIR$/Filters/src/main/java/ru/mirea/UserFilter.java" />
+        <option value="$PROJECT_DIR$/Filters/src/main/java/ru/mirea/TokenValidator.java" />
+        <option value="$PROJECT_DIR$/Filters/src/main/java/ru/mirea/AdminFilter.java" />
+        <option value="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Token.java" />
+        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/SecurityFilter.java" />
+        <option value="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthController.java" />
+        <option value="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthRowMapper.java" />
+        <option value="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthService.java" />
+        <option value="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/SecurityFilter.java" />
+        <option value="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/Application.java" />
+        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartDAO.java" />
+        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemController.java" />
+        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemService.java" />
+        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemDAO.java" />
+        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartController.java" />
+        <option value="$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/Application.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/Application.java" />
+        <option value="$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/Application.java" />
+        <option value="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/configStorage/ConfigStorageController.java" />
+        <option value="$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/configStorage/ConfigStorageService.java" />
+        <option value="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/Application.java" />
+        <option value="$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/DataService.java" />
+        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/DataService.java" />
+        <option value="$PROJECT_DIR$/Domains/src/main/java/ru/mirea/User.java" />
+        <option value="$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartService.java" />
       </list>
     </option>
   </component>
@@ -255,10 +260,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -268,15 +274,111 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="AuthService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="AuthService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="AuthService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="AuthService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="AuthService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mirea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="AuthService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mirea" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="AuthService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="BalanceService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="BalanceService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="BalanceService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="BalanceService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="BalanceService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mirea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="BalanceService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
@@ -329,14 +431,57 @@
               <item name="CartService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mirea" type="462c0819:PsiDirectoryNode" />
-              <item name="price" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
-              <item name="CartService" type="462c0819:PsiDirectoryNode" />
+              <item name="ConfigStorage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="ConfigStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="ConfigStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="ConfigStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="ConfigStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mirea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="ConfigStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mirea" type="462c0819:PsiDirectoryNode" />
+              <item name="configStorage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="ConfigStorage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -344,6 +489,76 @@
             <path>
               <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Domains" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Domains" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Domains" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Domains" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Domains" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mirea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Filters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Filters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Filters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Filters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="Filters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mirea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
               <item name="ItemService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -375,6 +590,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mirea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetShop-root" type="462c0819:PsiDirectoryNode" />
+              <item name="ItemService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mirea" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PetShop-root" type="b2602c69:ProjectViewProjectNode" />
@@ -392,9 +617,7 @@
               <item name="ItemService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mirea" type="462c0819:PsiDirectoryNode" />
-              <item name="stuff" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -403,7 +626,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../petShop3lab" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -411,9 +634,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.mirea" />
       <recent name="ru.mirea.domain" />
       <recent name="mirea.domain" />
-      <recent name="ru.mirea" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\Универ\5 семестр\Разработка КСП\PetShop-root\BalanceService\src\main\java" />
@@ -431,14 +654,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application (1)">
+  <component name="RunManager" selected="Application.Application (5)">
     <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mirea.Application" />
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.Application" />
+      <module name="ConfigStorage" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Application (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.Application" />
+      <module name="AuthService" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Application (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.Application" />
       <module name="BalanceService" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mirea.*" />
+          <option name="PATTERN" value="ru.mirea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Application (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.Application" />
+      <module name="CartService" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -496,13 +752,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.Application (3)" />
+      <item itemvalue="Application.Application (4)" />
+      <item itemvalue="Application.Application (5)" />
       <item itemvalue="Application.Application (1)" />
+      <item itemvalue="Application.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application (1)" />
+        <item itemvalue="Application.Application (5)" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Application (1)" />
+        <item itemvalue="Application.Application (4)" />
+        <item itemvalue="Application.Application (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -529,23 +791,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.11056106" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.23762377" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.06435644" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2246596" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.330033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -558,6 +821,34 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24257426" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2246596" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.330033" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48184818" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.1369637" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -568,302 +859,70 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.3.160/h2-1.3.160.jar!/org/h2/command/Command.class">
+    <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/CartItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5032">
-          <caret line="298" column="28" selection-start-line="298" selection-start-column="17" selection-end-line="298" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/resources/jdbctemplate-item-config.xml" />
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar!/org/springframework/jdbc/core/RowMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/DataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/DataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/domain/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding>
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigStorage/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigStorage/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="19" selection-start-line="13" selection-start-column="4" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AuthService/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AuthService/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/ConfigStorageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#197#213#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/ConfigStorageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/price/TotalPrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/domain/Pet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="21" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domains/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Pet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Stuff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/price/TotalPriceRowMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/ItemRowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/CartItem.java">
+    <entry file="file://$PROJECT_DIR$/CartService/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/mirea/domain/Item.java">
+    <entry file="file://$PROJECT_DIR$/AuthService/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#504#505#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="524">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Balance.java">
+    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/price/TotalPriceRowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+        <state relative-caret-position="170">
+          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartService.java">
+    <entry file="file://$PROJECT_DIR$/Filters/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/SecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="204">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/balance/BalanceService.java">
+    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/SecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/balance/BalanceDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="323">
           <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -881,6 +940,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/balance/BalanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/balance/BalanceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -891,10 +960,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartController.java">
+    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/SecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filters/src/main/java/ru/mirea/AdminFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filters/src/main/java/ru/mirea/TokenValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filters/src/main/java/ru/mirea/UserFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -903,103 +1022,293 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="377">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetRowMapper.java">
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemRowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/pet/PetWrapper.java">
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/item/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CartService/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="93" selection-start-line="29" selection-start-column="93" selection-end-line="29" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/DataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigStorage/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/configStorage/ConfigStorageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/configStorage/ConfigStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#211#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigStorage/src/main/java/ru/mirea/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/DataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/java/ru/mirea/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BalanceService/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/DataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="578">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffRowMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Item.java">
+    <entry file="file://$PROJECT_DIR$/AuthService/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/ItemRowMapper.java">
+    <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="476">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ItemService/src/main/java/ru/mirea/stuff/StuffService.java">
+    <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/DataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AuthService/src/main/java/ru/mirea/auth/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domains/src/main/java/ru/mirea/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CartService/src/main/java/ru/mirea/cart/CartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

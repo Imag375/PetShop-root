@@ -19,13 +19,15 @@ public class DataService {
     @PostConstruct
     public void init() {
         /*String sql ="CREATE TABLE Item(" +
-                "id int(36) PRIMARY KEY NOT NULL, " +
+                "id int(36) NOT NULL, " +
                 "name varchar(255) NOT NULL, " +
                 "price double(255) NOT NULL, " +
-                "count int(255) NOT NULL)";
+                "count int(255) NOT NULL, " +
+                "PRIMARY KEY(name, price, count), " +
+                "UNIQUE (id))";
         jdbcTemplate.execute(sql);
         sql = "INSERT INTO Item VALUES" +
-                "('1', 'Dog', '1250', '13')," +
+                "('1', 'Dog', '1250', '14')," +
                 "('2', 'Whiskas', '256', '103')," +
                 "('3', 'Fish', '345', '17')," +
                 "('4', 'Chappy', '579', '250')," +
@@ -43,7 +45,7 @@ public class DataService {
                 "internalID int(36) PRIMARY KEY NOT NULL);";
         jdbcTemplate.execute(sql);
         sql = "INSERT INTO Pet VALUES" +
-                "('1', 'Dog', 'Big, but cute dog.', '1250', '13', '1')," +
+                "('1', 'Dog', 'Big, but cute dog.', '1250', '14', '1')," +
                 "('5', 'Cat', 'Playful and fluffy pet.', '750', '25', '2')," +
                 "('3', 'Fish', 'Perhaps the fish is magic.', '345', '17', '3');";
         jdbcTemplate.execute(sql);

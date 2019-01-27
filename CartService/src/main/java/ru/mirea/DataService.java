@@ -18,21 +18,13 @@ public class DataService {
 
     @PostConstruct
     public void init() {
-        String sql ="CREATE TABLE Cart(" +
+        /*String sql ="CREATE TABLE Cart(" +
                 "userID int(36) NOT NULL, " +
-                "internalID int(36) PRIMARY KEY NOT NULL, " +
                 "itemID int(36) NOT NULL, " +
                 "name varchar(255) NOT NULL, " +
                 "price double(255) NOT NULL, " +
-                "count int(255) NOT NULL)";
-        jdbcTemplate.execute(sql);
-        sql = "INSERT INTO CartItem VALUES" +
-                "('3', '1', '1', 'Dog', '1250', '1')," +
-                "('2', '2', '2', 'Whiskas', '256', '4')," +
-                "('3', '3', '3', 'Fish', '345', '2')," +
-                "('1', '4', '4', 'Chappy', '579', '1')," +
-                "('2', '5', '5', 'Cat', '750', '1')," +
-                "('1', '6', '6', 'Cliffi', '347', '3');";
+                "count int(255) NOT NULL," +
+                "PRIMARY KEY(userID, itemID));";
         jdbcTemplate.execute(sql);
 
         sql ="CREATE TABLE TotalPrices(" +
@@ -40,9 +32,8 @@ public class DataService {
                 "price double(255) NOT NULL)";
         jdbcTemplate.execute(sql);
         sql = "INSERT INTO TotalPrices VALUES" +
-                "('2', '926')," +
-                "('1', '1006')," +
-                "('3', '1595');";
-        jdbcTemplate.execute(sql);
+                "('3', '0')," +
+                "('4', '0');";
+        jdbcTemplate.execute(sql);*/
     }
 }

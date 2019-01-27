@@ -28,13 +28,26 @@
         </dependency>
 
         <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.3.160</version>
         </dependency>
+
         <dependency>
             <groupId>PetShop</groupId>
             <artifactId>Domains</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>PetShop</groupId>
+            <artifactId>Filters</artifactId>
             <version>1.0</version>
             <scope>compile</scope>
         </dependency>

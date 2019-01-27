@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 public class CartItem {
 
     protected int userID;
-    protected int internalID;
     protected int itemID;
     protected String name;
     protected BigDecimal price;
@@ -13,10 +12,6 @@ public class CartItem {
 
     public int getUserID() {
         return userID;
-    }
-
-    public int getInternalID() {
-        return internalID;
     }
 
     public int getItemID() {
@@ -35,9 +30,8 @@ public class CartItem {
         return count;
     }
 
-    public CartItem(int userID, int internalID, int itemID, String name, BigDecimal price, int count) {
+    public CartItem(int userID, int itemID, String name, BigDecimal price, int count) {
         this.userID = userID;
-        this.internalID = internalID;
         this.itemID = itemID;
         this.name = name;
         this.price = price;

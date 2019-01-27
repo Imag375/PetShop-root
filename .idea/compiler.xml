@@ -11,6 +11,7 @@
         <module name="CartService" />
         <module name="ConfigStorage" />
         <module name="Domains" />
+        <module name="Filters" />
         <module name="ItemService" />
         <module name="PetShop-root" />
       </profile>
