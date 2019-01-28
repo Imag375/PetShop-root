@@ -5,11 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import ru.mirea.CartItem;
 import ru.mirea.Token;
 
 import java.io.IOException;
-import java.util.List;
 
 @Controller
 public class CartController {
@@ -19,7 +17,7 @@ public class CartController {
 
     @RequestMapping(value = "cart", method = RequestMethod.GET)
     @ResponseBody
-    public List<CartItem> getItems(@RequestHeader HttpHeaders hh) throws IOException {
+    public ShoppingList getItems(@RequestHeader HttpHeaders hh) throws IOException {
         int userID = getUserID(hh);
         return cartService.getItems(userID);
     }

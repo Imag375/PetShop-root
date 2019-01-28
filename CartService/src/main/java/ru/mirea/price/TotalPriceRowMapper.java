@@ -9,9 +9,8 @@ import java.sql.SQLException;
 public class TotalPriceRowMapper implements RowMapper<TotalPrice> {
 
     public TotalPrice mapRow(ResultSet resultSet, int i) throws SQLException {
-        int userID = resultSet.getInt("userID");
-        BigDecimal price = resultSet.getBigDecimal("price");
+        BigDecimal price = resultSet.getBigDecimal("TotalPrice");
 
-        return new TotalPrice(userID, price);
+        return new TotalPrice(price);
     }
 }

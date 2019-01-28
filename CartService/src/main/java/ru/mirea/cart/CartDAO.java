@@ -40,23 +40,26 @@ public class CartDAO {
                     name + "', " +
                     price + ", " +
                     1 + ")");
-        jdbcTemplate.execute("update TotalPrices set price = price + " + price + " where userID = " + userID);
     }
 
     public void deleteItem(int itemID, int userID) {
-        jdbcTemplate.execute("delete from Cart where itemID =" + itemID + " and userID = " + userID);
+        if (jdbcTemplate.query("select * from Cart where userID = " + userID +
+                " and itemID = " + itemID, new ItemRowMapper()).get(0).getCount() > 1)
+            jdbcTemplate.execute("update Cart set" +
+                    " count = count - 1 where userID = " + userID + " and itemID = " + itemID);
+        else
+            jdbcTemplate.execute("delete from Cart where itemID =" + itemID + " and userID = " + userID);
     }
 
     public void deleteAll(int userID) {
         jdbcTemplate.execute("delete from Cart where userID = " + userID);
-        jdbcTemplate.execute("update TotalPrices set price = 0 where userID = " + userID);
     }
 
-    public BigDecimal getTotalPrice(int userID) {
-        String query = "select * from TotalPrices where userID = " + userID;
+    public TotalPrice getTotalPrice(int userID) {
+        String query = "select sum(price) as TotalPrice from Cart where userID = " + userID;
 
         List<TotalPrice> totalPrice = jdbcTemplate.query(query, new TotalPriceRowMapper());
 
-        return totalPrice.get(0).getPrice();
+        return totalPrice.get(0);
     }
 }

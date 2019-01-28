@@ -13,9 +13,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import ru.mirea.*;
+import ru.mirea.price.TotalPrice;
 
-import java.math.BigDecimal;
-import java.util.List;
 import java.util.Map;
 
 @Service
@@ -73,23 +72,23 @@ public class CartService {
         cartDAO.deleteItem(id , userID);
     }
 
-    public List<CartItem> getItems(int userID) {
-        return cartDAO.findAll(userID);
+    public ShoppingList getItems(int userID) {
+        return new ShoppingList(cartDAO.findAll(userID), cartDAO.getTotalPrice(userID));
     }
 
     public String buyItems(int userID) {
-        BigDecimal totalPrice = cartDAO.getTotalPrice(userID);
+        TotalPrice totalPrice = cartDAO.getTotalPrice(userID);
 
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity httpEntity = new HttpEntity(headers);
         ResponseEntity<Balance> balanceResponseEntity = restTemplate.exchange(config.get("Balance") + "/balance/" + userID, HttpMethod.GET, httpEntity, Balance.class);
         Balance balance = balanceResponseEntity.getBody();
 
-        if (balance.getMoney().compareTo(totalPrice) == -1) {
+        if (balance.getMoney().compareTo(totalPrice.getTotalPrice()) == -1) {
             return "Error! Small balance!";
         }
 
-        Balance newBalance = new Balance(userID, balance.getMoney().subtract(totalPrice));
+        Balance newBalance = new Balance(userID, balance.getMoney().subtract(totalPrice.getTotalPrice()));
         HttpEntity httpEntityWithBody = new HttpEntity(newBalance, headers);
         restTemplate.exchange(config.get("Balance") + "/balance/" + userID, HttpMethod.POST, httpEntityWithBody, Balance.class);
 

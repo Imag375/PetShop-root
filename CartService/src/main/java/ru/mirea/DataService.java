@@ -26,14 +26,9 @@ public class DataService {
                 "count int(255) NOT NULL," +
                 "PRIMARY KEY(userID, itemID));";
         jdbcTemplate.execute(sql);
-
-        sql ="CREATE TABLE TotalPrices(" +
-                "userID int(36) PRIMARY KEY NOT NULL, " +
-                "price double(255) NOT NULL)";
-        jdbcTemplate.execute(sql);
-        sql = "INSERT INTO TotalPrices VALUES" +
-                "('3', '0')," +
-                "('4', '0');";
+        sql = "INSERT INTO Cart(userID) VALUES" +
+                "('3')," +
+                "('4');";
         jdbcTemplate.execute(sql);*/
     }
 }
