@@ -32,7 +32,7 @@ public class CartService {
         RestTemplate restTemplate = new RestTemplate();
         config = restTemplate.getForObject("http://localhost:8085/config", Map.class);
 
-        Token token = new Token(4, User.Role.Admin);
+        Token token = new Token(4, User.Role.admin);
         String signature = DigestUtils.sha256Hex(token.toString() + "SuperSecretKey");
         token.setSignature(signature);
         ObjectMapper objectMapper = new ObjectMapper();
@@ -49,20 +49,20 @@ public class CartService {
         HttpEntity httpEntity = new HttpEntity(headers);
         ResponseEntity<Pet[]> pet = restTemplate.exchange(config.get("Item") + "/pet/" + id, HttpMethod.GET, httpEntity, Pet[].class);
 
-        if (pet.getBody().length != 0 && pet.getBody()[0].getCount() != 0) {
+        if ((pet.getBody().length != 0) && (pet.getBody()[0].getCount() > 0)) {
             restTemplate.exchange(config.get("Item") + "/item/" + pet.getBody()[0].getId() + "/sub", HttpMethod.POST, httpEntity, Item.class);
-            cartDAO.addItem(userID, id, pet.getBody()[0].getName(), pet.getBody()[0].getPrice());
+            cartDAO.addItem(userID, pet.getBody()[0].getId(), pet.getBody()[0].getName(), pet.getBody()[0].getPrice());
         }
     }
 
-    public void putStaff(int id, int userID) {
+    public void putStuff(int id, int userID) {
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity httpEntity = new HttpEntity(headers);
-        ResponseEntity<Stuff[]> stuff = restTemplate.exchange(config.get("Item") + "/staff/" + id, HttpMethod.GET, httpEntity, Stuff[].class);
+        ResponseEntity<Stuff[]> stuff = restTemplate.exchange(config.get("Item") + "/stuff/" + id, HttpMethod.GET, httpEntity, Stuff[].class);
 
-        if (stuff.getBody().length != 0 && stuff.getBody()[0].getCount() != 0) {
+        if ((stuff.getBody().length != 0) && (stuff.getBody()[0].getCount() != 0)) {
             restTemplate.exchange(config.get("Item") + "/item/" + stuff.getBody()[0].getId() + "/sub", HttpMethod.POST, httpEntity, Item.class);
-            cartDAO.addItem(userID, id, stuff.getBody()[0].getName(), stuff.getBody()[0].getPrice());
+            cartDAO.addItem(userID, stuff.getBody()[0].getId(), stuff.getBody()[0].getName(), stuff.getBody()[0].getPrice());
         }
     }
 

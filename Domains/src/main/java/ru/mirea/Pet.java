@@ -26,4 +26,8 @@ public class Pet extends Item {
         this.count = count;
         this.internalID = internalID;
     }
+
+    public Pet(){
+
+    }
 }

@@ -18,7 +18,6 @@ public class Stuff extends Item {
     @JsonIgnore
     int internalID;
 
-
     public Stuff(int id, String name, String info, BigDecimal price, int count, int internalID){
         this.id = id;
         this.name = name;
@@ -26,5 +25,9 @@ public class Stuff extends Item {
         this.price = price;
         this.count = count;
         this.internalID = internalID;
+    }
+
+    public Stuff(){
+
     }
 }

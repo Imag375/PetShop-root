@@ -3,6 +3,7 @@ package ru.mirea;
 import java.math.BigDecimal;
 
 public class Item {
+
     protected int id;
     protected String name;
     protected BigDecimal price;
@@ -38,5 +39,9 @@ public class Item {
 
     public void setCount(int count) {
         this.count = count;
+    }
+
+    public Item() {
+
     }
 }

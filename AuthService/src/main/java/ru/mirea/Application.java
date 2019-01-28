@@ -13,7 +13,7 @@ public class Application {
 
         SpringApplication.run(Application.class);
 
-        Connection conn = DriverManager.getConnection("jdbc:h2:~/PetShop-rootDB/AuthDB", "sa", "");
-        org.h2.tools.Server.startWebServer(conn);
+        //Connection conn = DriverManager.getConnection("jdbc:h2:~/PetShop-rootDB/AuthDB", "sa", "");
+        //org.h2.tools.Server.startWebServer(conn);
     }
 }

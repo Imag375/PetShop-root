@@ -19,4 +19,8 @@ public class Balance {
         this.userID = userID;
         this.money = money;
     }
+
+    public Balance(){
+
+    }
 }

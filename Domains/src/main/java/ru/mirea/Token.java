@@ -40,5 +40,7 @@ public class Token {
         return userID + User.getStringRole(role);
     }
 
+    public Token(){
 
+    }
 }

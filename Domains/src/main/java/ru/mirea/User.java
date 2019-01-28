@@ -27,33 +27,33 @@ public class User {
         this.id = id;
         this.login = login;
         this.password = password;
-        this.role = getRole(role);
+        this.role = getRoleR(role);
     }
 
     public static String getStringRole(Role role){
         String roleS;
         switch (role){
-            case User:
-                roleS = "User";
+            case user:
+                roleS = "user";
                 break;
-            case Admin:
-                roleS = "Admin";
+            case admin:
+                roleS = "admin";
                 break;
             default:
-                roleS = "Error";
+                roleS = "error";
                 break;
         }
         return roleS;
     }
 
-    public static Role getRole(String roleS){
+    public static Role getRoleR(String roleS){
         Role r;
         switch (roleS){
-            case "User":
-                r = Role.User;
+            case "user":
+                r = Role.user;
                 break;
-            case "Admin":
-                r = Role.Admin;
+            case "admin":
+                r = Role.admin;
                 break;
             default:
                 r = null;
@@ -65,8 +65,12 @@ public class User {
     //Роли пользователей
     public enum Role {
         //Пользователь
-        User,
+        user,
         //Администратор
-        Admin
+        admin
+    }
+
+    public User(){
+
     }
 }

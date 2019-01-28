@@ -37,4 +37,8 @@ public class CartItem {
         this.price = price;
         this.count = count;
     }
+
+    public CartItem(){
+
+    }
 }

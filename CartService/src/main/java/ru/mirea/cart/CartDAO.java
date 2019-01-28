@@ -26,15 +26,18 @@ public class CartDAO {
     }
 
     public void addItem(int userID, int itemID, String name, BigDecimal price) {
-        if (jdbcTemplate.query("select * from Cart where userID = " + userID +
-                " and itemID = " + itemID, new ItemRowMapper()).get(0).getItemID() == itemID)
+        if (!jdbcTemplate.query("select * from Cart where userID = " + userID +
+                " and itemID = " + itemID, new ItemRowMapper()).isEmpty()) {
             jdbcTemplate.execute("update Cart set price = price + " + price +
-                    " and count = count + 1 where userID = " + userID + " and itemID = " + itemID);
+                    " where userID = " + userID + " and itemID = " + itemID);
+            jdbcTemplate.execute("update Cart set" +
+                    " count = count + 1 where userID = " + userID + " and itemID = " + itemID);
+        }
         else
             jdbcTemplate.execute("insert into Cart values(" +
                     userID + ", " +
-                    itemID + ", " +
-                    name + ", " +
+                    itemID + ", '" +
+                    name + "', " +
                     price + ", " +
                     1 + ")");
         jdbcTemplate.execute("update TotalPrices set price = price + " + price + " where userID = " + userID);

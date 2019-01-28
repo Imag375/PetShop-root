@@ -2,8 +2,10 @@ package ru.mirea.auth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 import ru.mirea.User;
 
+@Component
 public class AuthDAO {
 
     JdbcTemplate jdbcTemplate;
@@ -15,6 +17,6 @@ public class AuthDAO {
 
 
     public User getUserByLogin(String userLogin){
-        return jdbcTemplate.queryForObject("select * from User where login = '" + userLogin + "'", new AuthRowMapper());
+        return jdbcTemplate.queryForObject("select * from User where login = '" + userLogin + "';", new AuthRowMapper());
     }
 }

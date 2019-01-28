@@ -32,11 +32,11 @@ public class CartController {
         return "ok";
     }
 
-    @RequestMapping(value = "cart/staff/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "cart/stuff/{id}", method = RequestMethod.PUT)
     @ResponseBody
     public String putStaff(@PathVariable int id, @RequestHeader HttpHeaders hh) throws IOException {
         int userID = getUserID(hh);
-        cartService.putStaff(id, userID);
+        cartService.putStuff(id, userID);
         return "ok";
     }
 
